@@ -1,0 +1,6 @@
+@csharp_pubnub_eval_HostAddress = http://localhost:5206
+
+GET {{csharp_pubnub_eval_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
