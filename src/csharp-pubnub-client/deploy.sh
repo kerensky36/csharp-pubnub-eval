@@ -35,7 +35,7 @@ gsutil -m cp -r "$ROOT_DIR"/* gs://$BUCKET_NAME/
 echo "🔧 Setting Content-Encoding metadata for Brotli compressed files..."
 gsutil -m setmeta -h "Content-Encoding:br" -h "Content-Type:application/wasm" gs://$BUCKET_NAME/_framework/*.wasm.br
 gsutil -m setmeta -h "Content-Encoding:br" -h "Content-Type:application/javascript" gs://$BUCKET_NAME/_framework/*.js.br
-gsutil -m setmeta -h "Content-Encoding:br" -h "Content-Type:application/octet-stream" gs://$BUCKET_NAME/_framework/*.dll.br
+#gsutil -m setmeta -h "Content-Encoding:br" -h "Content-Type:application/octet-stream" gs://$BUCKET_NAME/_framework/*.dll.br
 gsutil -m setmeta -h "Content-Encoding:br" -h "Content-Type:application/json" gs://$BUCKET_NAME/_framework/*.json.br
 
 # Step 9: Done!
